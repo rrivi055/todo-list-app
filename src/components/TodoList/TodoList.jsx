@@ -1,3 +1,4 @@
+import TodoItem from '../TodoItem/TodoItem';
 function TodoList() {
   const tasks = ['לקנות חלב', 'להכין שיעורי בית', 'לסדר את החדר'];
 
@@ -6,7 +7,7 @@ function TodoList() {
       <h2>רשימת משימות</h2>
       <ul>
         {tasks.map((task) => (
-          <li key={task}>{task}</li>
+          <TodoItem key={task} title={task} />
         ))}
       </ul>
     </div>
